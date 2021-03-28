@@ -26,6 +26,10 @@
   color: rgb(255, 0, 0);
 }
 
+.hidden {
+  display: none;
+}
+
 /* Input block */
 .input {
   outline: none;
@@ -59,24 +63,29 @@ input::-webkit-inner-spin-button {
 }
 
 /* Indicator */
-.indicator {
+.page__indicator {
   position: relative;
   width: 200px;
   height: 200px;
 }
 
-.indicator svg {
+.page__indicator svg {
   position: relative;
   width: 200px;
   height: 200px;
   transform: rotate(-90deg);
 }
 
-.indicator circle {
+.page__indicator circle {
   width: 150px;
   height: 150px;
   fill: none;
   /* animation: progress 5s linear forwards; */
+}
+
+.page__indicator .progress-bar_animated {
+  transition: stroke-dashoffset 0.4s ease-in-out;
+  -webkit-transition: stroke-dashoffset 0.4s ease-in-out;
 }
 
 .background-bar {

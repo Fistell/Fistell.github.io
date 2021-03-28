@@ -33,12 +33,13 @@ function updateProgress(event) {
 }
 
 function toggleAnimation() {
-  progress.style.transition = this.checked ? "stroke-dashoffset 0.3s ease-in-out" : "none";
+  toggleClass(progress, "progress-bar_animated");
 }
 
 function toggleDisplay() {
-  progress.style.display = this.checked ? "none" : "block";
-  backgroundBar.style.display = this.checked ? "none" : "block";
+  const className = "hidden";
+  toggleClass(progress, className);
+  toggleClass(backgroundBar, className);
 }
 
 /* Utils */
@@ -53,4 +54,10 @@ function checkValidity(input, message) {
   }
 
   return isValid;
+}
+
+function toggleClass(element, className) {
+  element.classList.contains(className)
+    ? element.classList.remove(className)
+    : element.classList.add(className);
 }
