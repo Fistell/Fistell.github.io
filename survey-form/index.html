@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="page">
+        <header class="header">
+          <h1 id="title" class="title">Survey form</h1>
+          <p id="description" class="description">We will appreciate your feedback</p>
+        </header>
+        <div class="container">
+          <form id="survey-form" class="form" onsubmit="alert('Thank you!'); return false;">
+            <div class="form-row">
+              <label id="name-label" for="name" class="form-label">Name</label>
+              <input id="name" type="text" class="form-input" required placeholder="Adam Smith" />
+            </div>
+            <div class="form-row">
+              <label id="email-label" for="email" class="form-label">Email</label>
+              <input
+                id="email"
+                type="email"
+                class="form-input"
+                required
+                placeholder="adam.smith@gmail.com"
+              />
+            </div>
+            <div class="form-row">
+              <label id="number-label" for="number" class="form-label"
+                >How long have you been a member of our platform?</label
+              >
+              <div class="input-with-select">
+                <input
+                  id="number"
+                  type="number"
+                  min="0"
+                  max="30"
+                  class="form-input"
+                  required
+                  placeholder="10"
+                />
+                <select class="form-select">
+                  <option value="days" selected="selected">Days</option>
+                  <option value="months">Months</option>
+                  <option value="years">Years</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-row">
+              <label class="form-label" for="dropdown"
+                >How satisifed are you with the experience?</label
+              >
+              <select id="dropdown" class="form-select">
+                <option value="5" selected="selected">5 (pleased)</option>
+                <option value="4">4 (satisfied)</option>
+                <option value="3">3 (it's OK)</option>
+                <option value="2">2 (not satisfied)</option>
+                <option value="1">1 (disappointed)</option>
+              </select>
+            </div>
+            <div class="form-row">
+              <label class="form-label">Would you recommend us to a friend?</label>
+              <p><input name="is-recommended" type="radio" value="yes" checked /> Yes</p>
+              <p><input name="is-recommended" type="radio" value="no" /> No</p>
+            </div>
+            <div class="form-row">
+              <label class="form-label">How did you find out about our service?</label>
+              <p><input type="checkbox" name="who-recommended" value="friend" /> From a friend</p>
+              <p><input type="checkbox" name="who-recommended" value="ads" /> Ads</p>
+              <p>
+                <input type="checkbox" name="who-recommended" value="sites" /> Quora / Stackoverflow
+                / etc.
+              </p>
+              <p><input type="checkbox" name="who-recommended" value="nobody" /> Nobody</p>
+              <p><input type="checkbox" name="who-recommended" value="other" /> Other sources</p>
+            </div>
+            <div class="form-row">
+              <label class="form-label"
+                >You can describe your experience, leave additional notes and suggestions here if
+                you please</label
+              >
+              <textarea rows="3" class="form-input"></textarea>
+            </div>
+            <div class="form-row">
+              <input id="submit" class="button-submit" type="submit" value="Submit" />
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
