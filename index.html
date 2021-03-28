@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Progress</title>
+  </head>
+  <body>
+    <div class="page">
+      <div class="page__inner">
+        <div class="page__title title">Progress</div>
+        <div class="page__error error"></div>
+        <div class="page__content">
+          <div class="indicator">
+            <svg>
+              <circle class="background-bar" cx="90" cy="90" r="80"></circle>
+              <circle class="progress-bar" cx="90" cy="90" r="80"></circle>
+            </svg>
+          </div>
+          <div class="controls">
+            <div class="controls__item label">
+              <input class="controls__input input round" type="number" min="0" max="100" />
+              Value
+            </div>
+            <div class="controls__item">
+              <label class="controls__input switch">
+                <input id="animate" type="checkbox" />
+                <span class="slider round"></span>
+              </label>
+              Animate
+            </div>
+            <div class="controls__item">
+              <label class="controls__input switch">
+                <input id="hide" type="checkbox" />
+                <span class="slider round"></span>
+              </label>
+              Hide
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
