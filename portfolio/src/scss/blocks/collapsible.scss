@@ -1,0 +1,58 @@
+.collapsible-menu {
+  text-align: left;
+
+  &__title {
+    margin-bottom: 16px;
+  }
+}
+
+.collapsible-item {
+  border-top: 1px solid #d2d9e2;
+  color: $vivid-blue;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__button {
+    font-family: $font-body;
+    font-size: 18px;
+    background-color: #fff; // !
+    color: $vivid-blue;
+    transition: all 0.3s ease-in-out;
+  }
+
+  &__title {
+    font-family: $font-large;
+    font-size: 18px;
+    line-height: 24px;
+    margin: 12px 0;
+  }
+
+  &__content {
+    font-family: $font-body;
+    font-size: 14px;
+    line-height: 20px;
+    opacity: 0.7;
+
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.2s ease-in-out;
+  }
+
+  &:hover > &__content {
+    max-height: 250px; // hacky transition?
+    margin: 12px 0;
+    color: $black;
+  }
+
+  &:hover &__title {
+    color: $black;
+  }
+
+  &:hover &__button {
+    transform: rotate(-225deg);
+    color: $black;
+  }
+}

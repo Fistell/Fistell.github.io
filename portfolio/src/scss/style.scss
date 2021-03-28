@@ -1,0 +1,145 @@
+@import "./null.scss";
+@import "./variables.scss";
+
+@import "./fontawesome/brands.scss";
+@import "./fontawesome/_variables.scss";
+@import "./fontawesome/fontawesome.scss";
+@import "./fontawesome/solid.scss";
+
+@import "./blocks/avatar.scss";
+@import "./blocks/button.scss";
+@import "./blocks/card.scss";
+@import "./blocks/container.scss";
+@import "./blocks/collapsible.scss";
+@import "./blocks/title.scss";
+@import "./blocks/subtitle.scss";
+@import "./blocks/contact-form.scss";
+@import "./blocks/icons.scss";
+@import "./blocks/bullets.scss";
+
+.page {
+  // max-width: $max-width;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__inner {
+    width: 100%;
+
+    // overflow-y: scroll;
+    // scroll-behavior: smooth;
+  }
+}
+
+.introduction {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__container {
+    padding: 124px 0;
+  }
+
+  background-color: $white-2;
+  min-height: 100vh;
+
+  &__avatar {
+    margin-bottom: 36px;
+  }
+
+  &__img {
+    margin-bottom: 36px;
+  }
+
+  &__title {
+    margin-bottom: 8px;
+  }
+
+  &__subtitle {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+}
+
+.expectations {
+  width: 100%;
+  // padding: 100px 0; // ? is it correct padding for a block?
+  &__container {
+    padding: 100px 0;
+  }
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__collapsible-menu {
+    margin: 15px 0;
+  }
+
+  &__title {
+    text-align: left;
+  }
+}
+
+.portfolio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-color: $cinder;
+
+  &__container {
+    padding: 100px 0;
+  }
+
+  &__title {
+    color: $white;
+    margin-bottom: 8px;
+  }
+
+  &__subtitle {
+    color: $white;
+  }
+
+  &__card {
+    margin: 40px 0;
+  }
+
+  &__card:first-child {
+    margin-top: 80px;
+  }
+
+  &__card:last-child {
+    margin-bottom: 80px;
+  }
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background-color: $white-2;
+
+  &__container {
+    padding: 100px 0;
+  }
+
+  &__title {
+    margin-bottom: 16px;
+  }
+
+  &__icons {
+    margin-bottom: 20px;
+  }
+
+  &__subtitle {
+    margin-bottom: 40px;
+  }
+
+  &__contact-form {
+    width: 100%;
+  }
+}

@@ -1,0 +1,36 @@
+.contact-form {
+  &__form-row:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+
+.form-row {
+  display: flex;
+
+  &__form-input {
+    width: 100%;
+  }
+
+  &__form-input:not(:first-child) {
+    margin-left: 20px;
+  }
+}
+
+.form-input {
+  border: 1px solid $grey;
+  border-radius: 4px;
+  padding: 6px 0 10px 12px;
+
+  &:hover,
+  &:focus {
+    border-color: $vivid-blue;
+  }
+
+  &::placeholder {
+    opacity: 0.3;
+  }
+}
+
+textarea.form-input {
+  height: 136px;
+}

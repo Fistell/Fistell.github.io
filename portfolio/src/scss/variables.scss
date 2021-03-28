@@ -1,0 +1,67 @@
+// ------------------------- SIZES
+$max-width: 1000px;
+$max-content-width: 700px;
+
+// ------------------------- COLORS
+$white: #ffffff;
+$white-2: #eff1f2;
+$cinder: #25282a;
+$black: #000000;
+$vivid-blue: #0059d9;
+$light-blue: #71abff;
+$grey: #c5cdd7;
+$cyan: #395a99;
+$light-cyan: #51adef;
+$sky: #2ca5e0;
+
+// ------------------------- FONTS
+
+/* Montserrat Regular */
+@font-face {
+  font-family: "Montserrat Regular";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Montserrat Regular"), local("Montserrat-Regular"),
+    /* Modern Browsers */ url("../fonts/Montserrat-Regular.ttf") format("truetype");
+}
+
+/* Montserrat Bold */
+@font-face {
+  font-family: "Montserrat Bold";
+  font-style: normal;
+  font-weight: 600;
+  src: local("Montserrat Bold"), local("Montserrat-Bold"),
+    /* Modern Browsers */ url("../fonts/Montserrat-Bold.ttf") format("truetype");
+}
+
+/* Montserrat ExtraBold */
+@font-face {
+  font-family: "Montserrat ExtraBold";
+  font-style: normal;
+  font-weight: 800;
+  src: local("Montserrat ExtraBold"), local("Montserrat-ExtraBold"),
+    /* Modern Browsers */ url("../fonts/Montserrat-ExtraBold.ttf") format("truetype");
+}
+
+/* PT Sans Regular */
+@font-face {
+  font-family: "PT Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  src: local("PT Sans Regular"), local("PTSans-Regular"),
+    /* Modern Browsers */ url("../fonts/PTSans-Regular.ttf") format("truetype");
+}
+
+/* PTMono Regular */
+@font-face {
+  font-family: "PT Mono Regular";
+  font-style: normal;
+  font-weight: 400;
+  src: local("PT Mono Regular"), local("PTMono-Regular"),
+    /* Modern Browsers */ url("../fonts/PTMono-Regular.ttf") format("truetype");
+}
+
+$font-title: "Montserrat ExtraBold", sans-serif;
+$font-large: "Montserrat Bold", sans-serif;
+$font-input: "PT Sans Regular", sans-serif;
+$font-body: "PT Mono Regular", sans-serif;

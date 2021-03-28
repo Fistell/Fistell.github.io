@@ -1,0 +1,46 @@
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 4px;
+  width: 295px; // ???
+  height: 52px; // ???
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  //? Element or modificator ?
+  &_primary {
+    background-color: $vivid-blue;
+
+    font-size: 18px;
+    color: $white;
+  }
+
+  &_primary:hover {
+    background-color: $black;
+  }
+
+  &_primary:active {
+    background-color: $light-blue;
+    opacity: 0.7;
+  }
+
+  &_secondary {
+    background-color: transparent;
+    border: 1px solid $grey;
+
+    font-size: 16px;
+    color: $vivid-blue;
+  }
+
+  &_secondary:hover {
+    color: $black;
+  }
+
+  &_secondary:active {
+    color: $light-blue;
+  }
+}

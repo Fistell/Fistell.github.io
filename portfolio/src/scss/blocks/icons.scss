@@ -1,0 +1,27 @@
+.icons {
+  display: flex;
+
+  &__item {
+    margin: 0 8px;
+    height: 48px;
+    width: 48px;
+    color: $white;
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.icons__item.facebook {
+  background-color: $cyan;
+}
+
+.icons__item.twitter {
+  background-color: $light-cyan;
+}
+
+.icons__item.telegram {
+  background-color: $sky;
+}

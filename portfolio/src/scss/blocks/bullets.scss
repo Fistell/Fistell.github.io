@@ -1,0 +1,18 @@
+.bullets {
+  display: flex;
+
+  input {
+    height: 8px;
+    width: 8px;
+    padding: 3px;
+    cursor: pointer;
+
+    &:active {
+      background: #066cb6;
+    }
+  }
+
+  &__item:hover {
+    background: yellow;
+  }
+}

@@ -1,0 +1,8 @@
+.container {
+  width: $max-content-width; // ? why set width for each section?
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
