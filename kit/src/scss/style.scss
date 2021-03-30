@@ -1,0 +1,35 @@
+// @import "./null.scss";
+@import "./blocks/modal/modal.scss";
+@import "./blocks/dropdown/dropdown.scss";
+@import "./blocks/gradients/gradients.scss";
+@import "./blocks/transitions/transitions.scss";
+@import "./blocks/animation/animation.scss";
+
+// null css
+body,
+* + * {
+  margin-top: 1.5em;
+}
+
+.wrapper {
+  overflow: hidden;
+  min-height: 100%;
+}
+
+.page {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+
+  &__inner {
+    max-width: 1180px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

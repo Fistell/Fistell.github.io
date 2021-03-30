@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kit</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <main class="page">
+        <div class="page__inner">
+          <section class="section-modal">
+            <button id="modal-button">Click to see a pop-up</button>
+
+            <!-- The Modal -->
+            <div id="modal" class="modal">
+              <!-- Modal content -->
+              <div class="modal-content">
+                <span class="close">&times;</span>
+                <p>Some text in the Modal..</p>
+              </div>
+            </div>
+          </section>
+          <section class="container">
+            <h2>Dropdown menu on hover</h2>
+            <nav>
+              <div class="dropdown">
+                <div class="dropdown-label">Main Menu</div>
+                <div class="dropdown-menu">
+                  <ul class="submenu">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/coffees">Coffees</a></li>
+                    <li><a href="/brewers">Brewers</a></li>
+                    <li><a href="/specials">Specials</a></li>
+                    <li><a href="/about">About us</a></li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+            <div class="dropdown" aria-haspopup="true">
+              <button class="dropdown__toggle">Menu</button>
+              <div class="dropdown__drawer">
+                <ul class="menu" role="menu">
+                  <li role="menuitem">
+                    <a href="/features">Features</a>
+                  </li>
+                  <li role="menuitem">
+                    <a href="/pricing">Pricing</a>
+                  </li>
+                  <li role="menuitem">
+                    <a href="/support">Support</a>
+                  </li>
+                  <li role="menuitem">
+                    <a href="/about">About</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </section>
+          <section class="gradients">
+            <h2>Gradients</h2>
+            <div class="fade"></div>
+            <div class="fade-two"></div>
+            <h3>A repeating linear gradient for a striped bar</h3>
+            <div class="fade-three"></div>
+          </section>
+          <section class="transition">
+            <h2>Transition</h2>
+            <button class="button">Hover over me</button>
+          </section>
+          <div class="animation">
+            <h2>Animation</h2>
+            <div class="box"></div>
+            <div class="flyin-grid">
+              <div class="flyin-grid__item card">
+                <img src="images/chicken1.jpg" alt="a chicken" />
+                <h4>Mrs. Featherstone</h4>
+                <p>
+                  She may be a bit frumpy, but Mrs Featherstone gets the job done. She lays her
+                  largish cream-colored eggs on a daily basis. She is gregarious to a fault.
+                </p>
+              </div>
+              <div class="flyin-grid__item card">
+                <img src="images/chicken1.jpg" alt="a chicken" />
+                <h4>Hen Solo</h4>
+                <p>
+                  Though the most recent addition to our flock, Hen Solo is a fast favorite among
+                  our laying brood.
+                </p>
+              </div>
+              <div class="flyin-grid__item card">
+                <img src="images/chicken1.jpg" alt="a chicken" />
+                <h4>Cluck Norris</h4>
+                <p>
+                  Every brood has its brawler. Cluck Norris is our feistiest hen, frequently picking
+                  fights with other hens about laying territory and foraging space.
+                </p>
+              </div>
+              <div class="flyin-grid__item card">
+                <img src="images/chicken1.jpg" alt="a chicken" />
+                <h4>Peggy Schuyler</h4>
+                <p>
+                  Peggy was our first and friendliest hen. She is the most likely to greet visitors
+                  to the yard, and frequently to be found nesting in the coop.
+                </p>
+              </div>
+            </div>
+            <form>
+              <label for="trip">Tell us about your first trip to the zoo:</label>
+              <textarea id="trip" name="about-my-trip" rows="5"></textarea>
+              <button type="submit" id="submit-button">Save</button>
+            </form>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

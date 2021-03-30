@@ -1,0 +1,40 @@
+.fade {
+  height: 200px;
+  width: 400px;
+  background-image: linear-gradient(to right, white, blue);
+  // background-image: linear-gradient(90deg, white, blue); /* 90deg value is equivalent to the value to right*/
+}
+
+// Degrees are the most common unit, but there are a few others that you can use to
+// indicate angle:
+//  rad—Indicates radians. One full circle is 2, or roughly 6.2832 radians.
+//  turn—Indicates the number of full turns around the circle. One turn equals
+// 360 degrees (360deg). Use decimal values to represent less than one full turn:
+// 0.25turn, for example, is equal to 90deg.
+//  grad—Indicates gradians. One full circle is 400 gradians (400grad) and 100grad
+// equals 90deg.
+
+// --------------------------------------------------------------------------------------------------------------
+
+.fade-two {
+  height: 200px;
+  width: 400px;
+  background-image: linear-gradient(90deg, red, white, blue);
+}
+
+// A gradient can accept any number of color stops, each separated by a comma. It will
+// automatically spread them out evenly. In this example, the gradient fades from red on
+// the left edge (0%) to white in the center (50%) to blue on the right edge (100%).
+
+// You can also explicitly set the position of these color stops in the gradient function:
+// linear-gradient(90deg, red 0%, white 50%, blue 100%)
+
+// Stripes alternating between light and dark blue
+.fade-three {
+  height: 1em;
+  width: 400px;
+  background-image: repeating-linear-gradient(-45deg, #57b, #57b 10px, #148 10px, #148 20px);
+  border-radius: 0.3em;
+}
+/*With repeating gradients, it’s better to use a specific length rather than a percentage,
+because specified values determine the size of the pattern to repeat*/
